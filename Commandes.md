@@ -5,16 +5,16 @@ text
 ┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
 │   FIREWALL      │────▶│   SERVEUR WEB   │────▶│   BACKUP        │
 │   192.168.100.10│     │   192.168.100.50│     │   192.168.100.70│
-│   (Bastion)     │     │   (Nginx HTTPS) │     │   (Sauvegarde)  │
+│                 │     │   (Nginx HTTPS) │     │   (Sauvegarde)  │
 └─────────────────┘     └─────────────────┘     └─────────────────┘
-        │                         │
-        │                         │
-        ▼                         ▼
-┌─────────────────┐     ┌─────────────────┐
-│  ADMIN SERVER   │     │     CRON        │
-│  192.168.100.60 │     │   Automatisation│
-│   (Gestion)     │     │                 │
-└─────────────────┘     └─────────────────┘
+        │ 
+        │                         
+        ▼                         
+┌─────────────────┐     
+│  ADMIN SERVER   │     
+│  192.168.100.60 │     
+│   (Gestion)     │     
+└─────────────────┘     
 1. VÉRIFICATION INITIALE DE L'INFRASTRUCTURE
 Objectif : Vérifier la configuration existante avant de commencer.
 
